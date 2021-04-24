@@ -8,6 +8,7 @@ This repository was created to present a basic scaffolding of a node.js project 
 - Docker-compose
 
 ### Docker:
+The project use the next docker-compose file **docker-compose.sonar.yml**.
 
 ```yml
 version:  '3'

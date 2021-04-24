@@ -21,3 +21,10 @@ services:
             -  "9092:9092"
 
 ```
+
+Run this command:
+
+```sh
+docker-compose -f docker-compose.sonar.yml up -d
+```
+

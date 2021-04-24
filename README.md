@@ -30,6 +30,29 @@ docker-compose -f docker-compose.sonar.yml up -d
 
 Open a browser and navigate to http://localhost:9000/ and complete the login with: **user**:admin **password**:admin.
 
+### Configuration:
+Later the container has been created, go to http://localhost:9000/account/security/ and create the new token, copy the value
+and put in the next file **sonar-project.js**.
+
+```js
+const sonarqubeScanner =  require('sonarqube-scanner');
+sonarqubeScanner(
+    {
+        serverUrl:  'http://localhost:9000',
+        options : {
+            'sonar.login':'xxxxxxxxxxxx', //<----- Paste the security token.
+            'sonar.sources':  'src',
+            'sonar.tests':  'src',
+            'sonar.projectName': 'Servicio de prueba',
+            'sonar.projectDescription': 'Microservicio de prueba',            
+            'sonar.inclusions'  :  '**', // Entry point of your code
+            'sonar.test.inclusions':  'src/**/*.spec.js,src/**/*.spec.jsx,src/**/*.test.js,src/**/*.test.jsx',
+            'sonar.javascript.lcov.reportPaths':  'coverage/lcov.info',
+            'sonar.testExecutionReportPaths':  'coverage/test-reporter.xml'
+        }
+    }, () => {});
+```
+
 ### Code analysis:
 Make a git clone of this repository, and run the next commands.
 

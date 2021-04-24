@@ -40,7 +40,7 @@ sonarqubeScanner(
     {
         serverUrl:  'http://localhost:9000',
         options : {
-            'sonar.login':'xxxxxxxxxxxx', //<----- Paste the security token.
+            'sonar.login':'xxxxxxxxxxxx', //<----- Paste the security token, replace the x.
             'sonar.sources':  'src',
             'sonar.tests':  'src',
             'sonar.projectName': 'Servicio de prueba',
@@ -60,3 +60,7 @@ Make a git clone of this repository, and run the next commands.
 npm install
 npm run sonar 
 ```
+
+#### CODE SMELL:
+Sonar qube follow a list of 140 rules of javascript programming, to find code lines to improve.
+To see the rules, go to this link: http://localhost:9000/coding_rules?languages=js&types=CODE_SMELL

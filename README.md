@@ -22,9 +22,11 @@ services:
 
 ```
 
-Run this command:
+Run this command, to install de sonar-quber server into a container.
 
 ```sh
 docker-compose -f docker-compose.sonar.yml up -d
 ```
+
+Open a browser and navigate to http://localhost:9000/ and complete the login with: **user**:admin **password**:admin.
 

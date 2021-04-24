@@ -61,7 +61,7 @@ npm install
 npm run sonar 
 ```
 
-#### CODE SMELL:
+### CODE SMELL:
 Sonar qube follow a list of 140 rules of javascript programming, to find code lines to improve.
 To see the rules, go to this link: http://localhost:9000/coding_rules?languages=js&types=CODE_SMELL
 

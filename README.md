@@ -64,3 +64,9 @@ npm run sonar
 #### CODE SMELL:
 Sonar qube follow a list of 140 rules of javascript programming, to find code lines to improve.
 To see the rules, go to this link: http://localhost:9000/coding_rules?languages=js&types=CODE_SMELL
+
+The sonar qube source analysis is **sonar source**:
+https://docs.sonarqube.org/latest/analysis/external-issues/
+
+- **JS code smells**: https://rules.sonarsource.com/javascript/type/Code%20Smell
+- **JS BUG**: https://rules.sonarsource.com/javascript/type/Bug

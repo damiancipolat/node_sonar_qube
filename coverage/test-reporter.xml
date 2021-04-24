@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="/Users/u631183/Desktop/Proyectos/pocs/sonarqube/src/test/index.test.js">
+        <testCase name="Get Endpoints Get" duration="44"/>
+    </file>
+</testExecutions>
